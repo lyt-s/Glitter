@@ -6,10 +6,10 @@
 #include <glad/glad.h>
 
 // Standard Headers
-#include <cstdio>
+
 #include <cstdlib>
 #include <iostream>
-#include <iterator>
+
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void processInput(GLFWwindow *window);

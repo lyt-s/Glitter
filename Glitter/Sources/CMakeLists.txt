@@ -8,8 +8,8 @@ target_link_libraries(${name} assimp glfw
                       ${GLFW_LIBRARIES} ${GLAD_LIBRARIES}
                       BulletDynamics BulletCollision LinearMath)
 
-#set_target_properties(${name} PROPERTIES
-#     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${name})
+set_target_properties(${name} PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${name})
 
 add_custom_command(
     TARGET ${name} POST_BUILD

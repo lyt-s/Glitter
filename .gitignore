@@ -1,2 +1,4 @@
 [Bb]uild/
-Glitter/Vendor
+
+Glitter/Vendor/
+.cache
