@@ -1,5 +1,6 @@
-foreach (source IN ITEMS ${PROJECT_SOURCES})
-    get_filename_component(name "${source}" NAME_WLE)
+file(GLOB sources CONFIGURE_DEPENDS *.cpp)
+foreach (source IN ITEMS ${sources})
+    get_filename_component(name "${CMAKE_CURRENT_SOURCE_DIR}/${source}" NAME_WLE)
     add_executable(${name} ${name}.cpp  ${PROJECT_HEADERS}
                                ${PROJECT_SHADERS} ${PROJECT_CONFIGS}
                                ${VENDORS_SOURCES})
@@ -18,4 +19,4 @@ add_custom_command(
     DEPENDS ${PROJECT_SHADERS})
 
 endforeach() 
-add_subdirectory(3.3)
+
